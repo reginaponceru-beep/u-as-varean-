@@ -1,0 +1,178 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Bodoni Moda", serif;
+  --font-sans: "Plus Jakarta Sans", sans-serif;
+
+  --color-primary: #765843;
+  --color-primary-container: #c5a087;
+  --color-primary-fixed: #ffdcc5;
+  --color-primary-fixed-dim: #e6bfa4;
+  --color-on-primary: #ffffff;
+  --color-on-primary-fixed: #2b1606;
+  --color-on-primary-fixed-variant: #5c412d;
+
+  --color-secondary: #71518c;
+  --color-secondary-container: #e0bbfe;
+  --color-secondary-fixed: #f1daff;
+  --color-secondary-fixed-dim: #ddb8fb;
+  --color-on-secondary: #ffffff;
+  --color-on-secondary-fixed: #2a0a44;
+  --color-on-secondary-fixed-variant: #583972;
+
+  --color-tertiary: #635d58;
+  --color-tertiary-container: #aea6a0;
+  --color-tertiary-fixed: #eae1da;
+  --color-tertiary-fixed-dim: #cdc5be;
+
+  --color-surface: #fbf8ff;
+  --color-surface-dim: #dbd9e1;
+  --color-surface-bright: #fbf8ff;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f5f2fb;
+  --color-surface-container: #efecf5;
+  --color-surface-container-high: #eae7ef;
+  --color-surface-container-highest: #e4e1ea;
+
+  --color-on-surface: #1b1b21;
+  --color-on-surface-variant: #4f453e;
+  --color-inverse-surface: #303036;
+  --color-inverse-on-surface: #f2eff8;
+  --color-inverse-primary: #e6bfa4;
+
+  --color-outline: #81756d;
+  --color-outline-variant: #d3c3ba;
+  
+  --color-error: #ba1a1a;
+  --color-error-container: #ffdad6;
+}
+
+@layer base {
+  body {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    background-color: #fbf8ff;
+    color: #1b1b21;
+  }
+}
+
+.font-display-hero {
+  font-family: "Bodoni Moda", serif;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: -0.02em;
+  font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  .font-display-hero {
+    font-size: 38px;
+    line-height: 46px;
+    letter-spacing: -0.01em;
+  }
+}
+
+.font-headline-lg {
+  font-family: "Bodoni Moda", serif;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: -0.01em;
+  font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  .font-headline-lg {
+    font-size: 30px;
+    line-height: 38px;
+    letter-spacing: 0em;
+  }
+}
+
+.font-headline-md {
+  font-family: "Bodoni Moda", serif;
+  font-size: 28px;
+  line-height: 36px;
+  letter-spacing: 0em;
+  font-weight: 500;
+}
+
+.font-headline-sm {
+  font-family: "Bodoni Moda", serif;
+  font-size: 22px;
+  line-height: 30px;
+  letter-spacing: 0.01em;
+  font-weight: 500;
+}
+
+.font-body-lg {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 17px;
+  line-height: 28px;
+  letter-spacing: -0.005em;
+  font-weight: 400;
+}
+
+.font-body-md {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: 0em;
+  font-weight: 400;
+}
+
+.font-body-sm {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 0.01em;
+  font-weight: 400;
+}
+
+.font-label-caps {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 11px;
+  line-height: 14px;
+  letter-spacing: 0.12em;
+  font-weight: 600;
+}
+
+.font-label-md {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.01em;
+  font-weight: 500;
+}
+
+.font-label-sm {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+}
+
+/* Glassmorphism substrates */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(20px) saturate(140%);
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  box-shadow: 0 8px 32px -4px rgba(30, 30, 36, 0.05), 0 2px 8px -2px rgba(197, 160, 135, 0.1);
+}
+
+.glass-panel-hover {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-panel-hover:hover {
+  box-shadow: 0 16px 48px -8px rgba(30, 30, 36, 0.1), 0 4px 16px -2px rgba(197, 160, 135, 0.2);
+  transform: translateY(-2px);
+}
+
+/* Hide scrollbars elegantly */
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

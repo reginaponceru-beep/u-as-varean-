@@ -1,0 +1,6 @@
+{
+  "name": "Atelier L'Aura - Haute Onglerie & Nail Architecture",
+  "description": "Santuario de orfebrería de autor para uñas de presión de lujo, alta costura y gemología sobre gel estructurado.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
